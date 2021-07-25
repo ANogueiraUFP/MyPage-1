@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
+img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
 h1 {
     font-weight: normal;
     font-family: 'Dancing Script', cursive;
@@ -26,9 +32,10 @@ p {
     color: white;
     vertical-align: bottom;
     bottom: 0;
-    margin-left: auto;
+    margin-left: 75%;
     margin-right: 40px;
-   text-align: right;
+    text-align: right;
+    position: absolute;
 }
 
 #main {
@@ -40,7 +47,7 @@ a {
     color: blue;
 }
 
-#footer-button{
+#footer-button {
 
     margin: 40px auto 140px;
     color: white;
@@ -51,7 +58,7 @@ a {
 
 }
 
-button:hover{
+button:hover {
 
     opacity: .5;
 }
