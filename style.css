@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 h1 {
     font-family: 'Dancing Script', cursive;
     color: white;
     font-size: 44px;
+    text-align: center;
 }
 
 body {
     font-family: sans-serif;
-    background-color: deepskyblue;
+    background-image: url("images/background.jpg");
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire*/
 }
 
 p {
@@ -17,4 +24,14 @@ p {
 p {
     color: white;
     font-size: 17px
+}
+
+#footer-copyright {
+    color: gray;
+    vertical-align: bottom;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 100px;
 }
