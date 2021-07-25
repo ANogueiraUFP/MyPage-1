@@ -2,6 +2,8 @@
 <html dir="ltr" lang="en">
 <head>
 	<meta charset="utf-8">
+	<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" rel="stylesheet">
 	<link href="style.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com" rel="preconnect">
 	<link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
@@ -11,7 +13,24 @@
 <body>
 <div class="main">
 	<h1 align="center">André Nogueira - Web Developer</h1>
-
+	<nav>
+		<div class="nav nav-tabs" id="nav-tab" role="tablist">
+			<button aria-controls="nav-home" aria-selected="true" class="nav-link active" data-bs-target="#nav-home"
+			        data-bs-toggle="tab" id="nav-home-tab" role="tab" type="button">Home
+			</button>
+			<button aria-controls="nav-profile" aria-selected="false" class="nav-link" data-bs-target="#nav-profile"
+			        data-bs-toggle="tab" id="nav-profile-tab" role="tab" type="button">Portfólio
+			</button>
+			<button aria-controls="nav-contact" aria-selected="false" class="nav-link" data-bs-target="#nav-contact"
+			        data-bs-toggle="tab" id="nav-contact-tab" role="tab" type="button">Contacto
+			</button>
+		</div>
+	</nav>
+	<div class="tab-content" id="nav-tabContent">
+		<div aria-labelledby="nav-home-tab" class="tab-pane fade show active" id="nav-home" role="tabpanel">...</div>
+		<div aria-labelledby="nav-profile-tab" class="tab-pane fade" id="nav-profile" role="tabpanel">...</div>
+		<div aria-labelledby="nav-contact-tab" class="tab-pane fade" id="nav-contact" role="tabpanel">...</div>
+	</div>
 	<p>
 		Esta pagina serve para demonstrar todos os trabalhos que realizei e aprendizagens que obtive durante a minha
 		licenciatura de Engenharia Informatica.<br>
