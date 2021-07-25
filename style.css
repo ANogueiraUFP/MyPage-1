@@ -32,8 +32,8 @@ p {
     color: white;
     vertical-align: bottom;
     bottom: 0;
-    margin-left: 75%;
-    margin-right: 40px;
+    margin-left: 85%;
+    margin-right: 20px;
     text-align: right;
     position: absolute;
 }
@@ -61,4 +61,9 @@ a {
 button:hover {
 
     opacity: .5;
+}
+.navbar-nav{
+    background: transparent;
+
+
 }

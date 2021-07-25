@@ -17,20 +17,24 @@
 <body>
 <div id="main">
 	<h1 align="center">André Nogueira - Web Developer</h1>
-	<nav>
-		<div class="nav nav-tabs" id="nav-tab" role="tablist">
-			<button aria-controls="nav-home" aria-selected="true" class="nav-link active" data-bs-target="#nav-home"
-			        data-bs-toggle="tab" id="nav-home-tab" role="tab" type="button">Home
-			</button>
-			<button aria-controls="nav-profile" aria-selected="true" class="nav-link" data-bs-target="#nav-profile"
-			        data-bs-toggle="tab" id="nav-profile-tab" role="tab" type="button">Portfólio
-			</button>
-			<button aria-controls="nav-contact" aria-selected="false" class="nav-link" data-bs-target="#nav-contact"
-			        data-bs-toggle="tab" id="nav-contact-tab" role="tab" type="button">Contacto
-			</button>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Home</a>
+		<button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
+		        class="navbar-toggler"
+		        data-target="#navbarNavDropdown" data-toggle="collapse" type="button">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Portefólio <span class="sr-only"></span></a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Contatos <span class="sr-only"></span></a>
+				</li>
+			</ul>
 		</div>
 	</nav>
-
 
 	<div class="tab-content" id="nav-tabContent">
 
