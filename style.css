@@ -21,7 +21,6 @@ body {
     background-attachment: fixed;
     background-position: right top; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
-
     height: 500px; /* You must set a specified height */
 }
 
@@ -35,7 +34,6 @@ p {
     vertical-align: bottom;
     bottom: 0;
     margin-left: 85%;
-    margin-right: 20px;
     text-align: right;
     position: absolute;
 }
@@ -51,7 +49,6 @@ a {
 }
 
 
-
 #footer-button {
 
     margin: 40px auto 140px;
@@ -63,8 +60,8 @@ a {
 
 }
 
-button:hover {
+button.btn.btn-secondary a{
+    color: white;
 
-    opacity: .5;
 }
 
