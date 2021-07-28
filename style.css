@@ -47,7 +47,10 @@ p {
 
 a {
     color: blue;
+    border-radius: 10px;
 }
+
+
 
 #footer-button {
 
@@ -64,8 +67,4 @@ button:hover {
 
     opacity: .5;
 }
-.navbar-nav{
-    background: transparent;
 
-
-}
