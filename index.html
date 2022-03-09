@@ -21,22 +21,23 @@
 
     <style>
         .profileImage {
+            margin-top: 20px;
             width: auto;
-            border-radius: 50%;
-            max-width: 300px;
+            border-radius: 30%;
+            max-width: 200px;
         }
 
-        .corPrimaria {
+        .backgroundPrimario {
             background-color: #41729F;
         }
 
-        .corSecundaria {
+        .backgroundSecundario {
             background-color: #C3E0E5;
         }
 
         p {
             font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-            color: black !important;
+            color: #C3E0E5 !important;
         }
 
         .icones {
@@ -65,14 +66,13 @@
             color: #C3E0E5 !important;
         }
 
-        .jumbotron {
-            margin-bottom: 0px;
-        }
-
         .textofooter {
-            margin: 0;
-            padding-top: 15px;
-            padding-bottom: 15px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: white;
+            text-align: center;
             background-color: #274472;
         }
 
@@ -85,8 +85,9 @@
 <body>
 
 <nav class="navbar navbar-expand-md navbar-light " style="background-color: #274472">
-    <a class="navbar-brand" href="#" style=color:white>André Nogueira</a>
-    <button class="navbar-toggler " style="background-color: #274472" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+    <a class="navbar-brand" href="#" style=color:#C3E0E5>André Nogueira</a>
+    <button class="navbar-toggler " style="background-color: #274472" type="button" data-toggle="collapse"
+            data-target="#navbarsExample04"
             aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -108,99 +109,105 @@
     </div>
 </nav>
 
-<section class="jumbotron text-center corPrimaria">
+<section class="jumbotron text-center backgroundPrimario">
     <div class="container">
         <img class="profileImage" src="/images/profile.png" alt="">
         <h1 class="jumbotron-heading textoBranco">André Nogueira</h1>
         <p class="lead textoBranco">Junior Android Developer</p>
-        <p>
-            <a href="#" class="btn btn-primary my-2">Contatos</a>
-        </p>
-        <a href="#"> <i class="icones fab fa-linkedin textoBranco"></i></a>
-        <a href="#"> <i class="icones fab fa-github textoBranco"></i></a>
+        <a href="#"> <i class="icones fab fa-linkedin textoBranco" style="font-size:36px"></i></a>
+        <a href="#"> <i class="icones fab fa-github textoBranco" style="font-size:36px"></i></a>
     </div>
 </section>
-<div class="album py-5 bg-light">
-    <div class="container">
-        <h2 class="jumbotron-heading text-center greenTitles">Projetos</h2>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card mb-4 box-shadow">
-                    <img class="card-img-top"
-                         data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                         alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
-                         src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17f7037ccb2%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17f7037ccb2%22%3E%3Crect%20width%3D%22288%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.8203125%22%20y%3D%22118.8%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                         data-holder-rendered="true">
-                    <div class="card-body">
-                        <p class="card-text">Site para gestão de conferências e palestras</p>
-                        <ul>
-                            <li>PHP</li>
-                            <li>Laravel</li>
-                            <li>Mysql</li>
-                        </ul>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <a href="https://github.com/ANogueiraUFP/projeto_labprog">
-                                    <button type="button" class="btn btn-sm btn-outline-success">GitHub</button>
-                                </a>
+
+<section class="jumbotron text-center backgroundSecundario">
+    <div class="album py-5 ">
+        <div class="container">
+            <h3 class="jumbotron-heading text-center greenTitles">Projetos</h3>
+            <div class="row">
+                <!--<div class="col-md-12">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top"
+                             data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                             alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                             src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17f7037ccb2%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17f7037ccb2%22%3E%3Crect%20width%3D%22288%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.8203125%22%20y%3D%22118.8%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                             data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text">Site para gestão de conferências e palestras</p>
+                            <ul>
+                                <li>PHP</li>
+                                <li>Laravel</li>
+                                <li>Mysql</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="https://github.com/ANogueiraUFP/projeto_labprog">
+                                        <button type="button" class="btn btn-sm btn-outline-success">GitHub</button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
+                <!--<div class="col-md-6">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top"
+                             data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                             alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                             src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17f7037ccb2%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17f7037ccb2%22%3E%3Crect%20width%3D%22288%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.8203125%22%20y%3D%22118.8%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                             data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text">Site para gestão de conferências e palestras</p>
+                            <ul>
+                                <li>PHP</li>
+                                <li>Laravel</li>
+                                <li>Mysql</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="https://github.com/ANogueiraUFP/projeto_labprog">
+                                        <button type="button" class="btn btn-sm btn-outline-success">GitHub</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
             </div>
-            <!--<div class="col-md-6">
-                <div class="card mb-4 box-shadow">
-                    <img class="card-img-top"
-                         data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                         alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
-                         src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17f7037ccb2%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17f7037ccb2%22%3E%3Crect%20width%3D%22288%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.8203125%22%20y%3D%22118.8%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                         data-holder-rendered="true">
-                    <div class="card-body">
-                        <p class="card-text">Site para gestão de conferências e palestras</p>
-                        <ul>
-                            <li>PHP</li>
-                            <li>Laravel</li>
-                            <li>Mysql</li>
-                        </ul>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <a href="https://github.com/ANogueiraUFP/projeto_labprog">
-                                    <button type="button" class="btn btn-sm btn-outline-success">GitHub</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
         </div>
     </div>
-</div>
+</section>
 
 <!-- Sobre Mim-->
-<section class="jumbotron text-center corPrimaria">
-    <div class="container">
-        <h2 class="jumbotron-heading textoBranco">Sobre mim</h2>
-        <p class="lead">
-            TEXT ABOUT ME
-        </p>
+<section class="jumbotron text-center backgroundPrimario">
+    <div class="album py-5 ">
+        <div class="container">
+            <h3 class="jumbotron-heading textoBranco">Sobre mim</h3>
+            <p class="lead">
+                <!--TEXT ABOUT ME-->
+            </p>
+        </div>
     </div>
 </section>
 
 <!--Contacto-->
-<section class="corSecundaria" id="contacto">
-    <div>
-        <div class="container-fluid">
-            <h2 class="text-center textoBranco">Contactos</h2>
-            <a href="mailto:anogueiracb@gmail.com"><h4 style="padding-bottom:60px;margin-bottom: 60px;"
-                                                       class="text-center">anogueiracb@gmail.com</h4></a>
+<section class="jumbotron text-center backgroundSecundario" id="contactos">
+    <div class="album py-5 ">
 
+        <div class="container">
+            <h4 class="text-center greenTitles">Contactos</h4>
+            <a href="mailto:anogueiracb@gmail.com"><h4 style=" margin-right: 10px;color:#41729F "
+                                                       class="text-center"><i class="fa fa-envelope"
+                                                                              style="font-size:30px;color:#41729F;margin-right: 10px;margin-bottom: 0"></i>ARNogueira
+            </h4></a>
         </div>
     </div>
 </section>
-
-<footer class="text-center corSecundaria textofooter">
-    <p class="textoBranco">Copyright 2022 ARNogueira</p>
+<footer class=" text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: #274472;color: #C3E0E5">
+        © 2022 Copyright:
+        <a href="https://www.arnogueira.com/" style="color: #C3E0E5">ARNogueira.com</a>
+    </div>
 </footer>
-
 </body>
 </html>
