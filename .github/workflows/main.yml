@@ -1,4 +1,4 @@
-name:myPipe
+name: myPipe
 on: 
   push:
     branches:
