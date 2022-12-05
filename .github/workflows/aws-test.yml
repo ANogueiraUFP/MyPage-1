@@ -1,4 +1,4 @@
-name: GitHub Demo
+name: AWS-Login
 on:
   push:
     branches: [ gh-pages ]
