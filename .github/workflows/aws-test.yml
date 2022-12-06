@@ -2,9 +2,9 @@ name: Github Actions with CDK
 
 on:
   push:
-    branches: [ github-actions ]
+    branches: [ github-actions-aws ]
   pull_request:
-    branches: [ github-actions ]
+    branches: [ github-actions-aws ]
 
 jobs:
   aws_cdk:
