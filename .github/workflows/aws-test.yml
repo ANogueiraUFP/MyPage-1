@@ -7,11 +7,4 @@ on:
     branches: [ github-actions-aws ]
 
 jobs:
-  build:
-    runs-on: [self-hosted, macOS, X64]
-
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: demo workflow job
-        run: echo This is a demo
+  
