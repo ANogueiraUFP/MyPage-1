@@ -12,7 +12,7 @@ jobs:
     steps:
 
       - name: cdk diff
-        uses: arnogueir/MyPage@v2
+        uses: arnogueir/MyPage@v
         with:
           cdk_subcommand: 'diff'
           actions_comment: true
