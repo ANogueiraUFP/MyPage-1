@@ -17,6 +17,6 @@ jobs:
           cdk_subcommand: 'diff'
           actions_comment: true
         env:
-          AWS_ACCESS_KEY_ID: 'AKIA47AZRCBYXXAITMPS'
-          AWS_SECRET_ACCESS_KEY: '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'
+          AWS_ACCESS_KEY_ID: ${{ secrets.access }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.secret }}
           AWS_DEFAULT_REGION: 'eu-west-2'
