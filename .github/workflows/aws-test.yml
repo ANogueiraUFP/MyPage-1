@@ -12,7 +12,7 @@ jobs:
     steps:
 
       - name: cdk diff
-        uses: arnogueir/MyPage@v
+        uses: arnogueir/MyPage@github-actions-aws
         with:
           cdk_subcommand: 'diff'
           actions_comment: true
