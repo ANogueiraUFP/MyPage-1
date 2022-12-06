@@ -2,6 +2,10 @@ name: Github Actions with CDK
 
 on:
   push:
+    branches: [ github-actions ]
+  pull_request:
+    branches: [ github-actions ]
+
 jobs:
   aws_cdk:
   runs-on: [self-hosted, macOS, X64]
